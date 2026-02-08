@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Enter a city"
+            class="search-input"
+            required
+          />
+          <input type="submit" value="search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 id="current-city">London</h1>
+            <p class="current-details">
+              <span id="current-date"></span> , cloudy conditions
+              <br />
+              Humidity: <strong>73%, </strong>Wind: <strong> 9 mph</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">🌥️ </span>
+            <span class="current-temperature-value">14 </span>
+            <span class="current-temperature-unit">℃</span>
+          </div>
+        </div>
+        <div class="forecast-weather">
+          <ul>
+            <li>
+              Sun ☀️
+              <br />
+              <strong>10℃ </strong>/ 16℃
+            </li>
+            <li>
+              Mon 🌤️
+              <br />
+              <strong>12℃ </strong>/ 15℃
+            </li>
+            <li>
+              Tue🌤️
+              <br />
+              <strong>12℃ </strong>/ 15℃
+            </li>
+            <li>
+              Wed 🌤️
+              <br />
+              <strong>9℃ </strong>/ 14℃
+            </li>
+            <li>
+              Thu 🌤️
+              <br />
+              <strong>12℃ </strong>/ 13℃
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by Gabriella Derzsi and is
+          <a href="#" target="_blank">on Github</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/weather.js"></script>
+  </body>
+</html>
